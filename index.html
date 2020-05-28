@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fanny Rojon</title>
+
+  <!-- Bootstrap stylesheet -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Fonts stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!-- CSS stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="header">
+    <!-- <div class="header random-background"> -->
+      <ul>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    <!-- </div> -->
+  </div>
+
+  <!-- Random background script -->
+  <script  type="text/javascript">
+    function changeImg(imgNumber) {
+      var myImages = ["img/backgrounds/background3.jpg", "img/backgrounds/background4.jpg"];
+      var imgShown = document.body.style.backgroundImage;
+      var newImgNumber =Math.floor(Math.random()*myImages.length);
+      document.body.style.backgroundImage = 'url('+myImages[newImgNumber]+')';
+    }
+    window.onload=changeImg;
+  </script>
+
+</body>
+
+</html>
